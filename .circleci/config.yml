@@ -9,7 +9,7 @@ jobs:
 
       - run:
           name: ls
-          command: ls -l /data
+          command: ls -l
 
       - run:
           name: Greeting
