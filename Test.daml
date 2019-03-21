@@ -1,0 +1,12 @@
+daml 1.2
+module Test where 
+
+template Foo
+  with
+    party : Party
+  where
+    signatory party
+    
+test = scenario do
+  p <- getParty "party"
+  submit p $ create Foo with party = p
