@@ -8,5 +8,9 @@ jobs:
       - checkout
 
       - run:
+          name: ls
+          command: ls -l /data
+
+      - run:
           name: Greeting
-          command: da run damlc test /test/Test.daml
+          command: da run damlc test /data/test/Test.daml
