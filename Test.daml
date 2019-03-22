@@ -9,4 +9,4 @@ template Foo
     
 test = scenario do
   party <- getParty "party"
-  submit p $ create Foo with party
+  submit party $ create Foo with party
