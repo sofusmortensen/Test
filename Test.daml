@@ -8,5 +8,5 @@ template Foo
     signatory party
     
 test = scenario do
-  p <- getParty "party"
-  submit p $ create Foo with party = p
+  party <- getParty "party"
+  submit p $ create Foo with party
