@@ -1,5 +1,6 @@
  github: [metadata]
  encoding: UTF-8
+ markdown: kramdown
  kramdown:
    input: GFM
    hard_wrap: false
